@@ -38,11 +38,11 @@ public class Faculty {
     private University university;
 
     @OneToMany(mappedBy = "faculty")
-    List<Teacher> teachers = new ArrayList<Teacher>();
+    private List<Teacher> teachers = new ArrayList<Teacher>();
 
     @OneToMany(mappedBy = "faculty")
-    List<Secretary> secretaries = new ArrayList<Secretary>();
+    private List<Secretary> secretaries = new ArrayList<Secretary>();
 
     @OneToMany(mappedBy = "faculty")
-    List<Student> students = new ArrayList<>();
+    private List<Student> students = new ArrayList<>();
 }
